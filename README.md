@@ -100,3 +100,26 @@ Based on the provided notebook outputs, the model achieves an accuracy of approx
 *   `README.md`: This file.
 *   `brain_tumor_detection.ipynb`: Jupyter Notebook containing the complete code for data loading, preprocessing, model building, training, and evaluation.
 *   `brain_tumor_detection.py`: Python script version of the Jupyter Notebook.
+
+## Web Application
+
+A simple Flask web interface is provided in `app.py` that allows uploading an MRI image and returns the predicted label using the trained model.
+
+### Running the Web App
+
+1. Place your trained model file at `brain_tumor_model.h5` in the project root.
+2. Install the required dependencies:
+   ```bash
+   pip install flask tensorflow opencv-python
+   ```
+3. Start the server:
+   ```bash
+   python app.py
+   ```
+4. Open `http://localhost:5000` in your browser and upload an image to see the prediction.
+
+### Additional Files
+
+* `app.py`: Flask application for serving predictions.
+* `templates/index.html`: Upload form.
+* `templates/result.html`: Displays the prediction result.
