@@ -85,7 +85,7 @@ The script performs the following steps:
 2.  **Splits data:** Divides the dataset into training (90%) and testing (10%) sets.
 3.  **Data augmentation:** Uses `ImageDataGenerator` for on-the-fly data augmentation (rotation) on the training set.
 4.  **Builds and compiles the model:** As described in the "Model Architecture" section.
-5.  **Trains the model:** Trains for 10 epochs with a batch size of 8. The `fit_generator` method is used.
+5.  **Trains the model:** Trains for 10 epochs with a batch size of 8 using the `fit` method.
 6.  **Evaluates the model:** Predicts on the test set and prints a classification report and a confusion matrix.
 7.  **Plots results:** Generates and saves a plot (`plot.jpg`) showing training/validation loss and accuracy over epochs.
 
