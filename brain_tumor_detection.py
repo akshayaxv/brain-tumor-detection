@@ -128,7 +128,7 @@ for layer in base_model.layers:
 
 # Compile the model
 model = Model(inputs = base_input, outputs = base_output)
-model.compile(optimizer= Adam(learning_rate= 1e-3), metrics= ['accuracy'], loss= 'binary_crossentropy')
+model.compile(optimizer= Adam(learning_rate= 1e-3), metrics= ['accuracy'], loss= 'categorical_crossentropy')
 
 
 # In[12]:
