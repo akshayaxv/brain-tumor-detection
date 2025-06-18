@@ -90,7 +90,7 @@ print(labels[0])
 # In[7]:
 
 
-#Split the dataset
+# Split the dataset
 (train_X, test_X, train_Y, test_Y) = train_test_split(images, labels, test_size= 0.10, random_state= 42, stratify= labels)
 
 
