@@ -151,11 +151,12 @@ epochs = 10
 
 
 # Fit the model
-history = model.fit_generator(train_generator.flow(train_X, train_Y, batch_size= batch_size),
-                              steps_per_epoch= train_steps,
-                              validation_data = (test_X, test_Y),
-                              validation_steps= validation_steps,
-                              epochs= epochs)
+history = model.fit(
+    train_generator.flow(train_X, train_Y, batch_size=batch_size),
+    steps_per_epoch=train_steps,
+    validation_data=(test_X, test_Y),
+    epochs=epochs,
+)
 
 
 # In[15]:
