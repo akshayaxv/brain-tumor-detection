@@ -5,7 +5,7 @@ This repository contains a project for detecting brain tumors from MRI images us
 
 ## Project Overview
 
-The primary goal of this project is to classify MRI images of brains into two categories: those with tumors ('yes') and those without tumors ('no'). This is achieved by leveraging transfer learning with a pre-trained VGG16 model, fine-tuning it with additional custom layers for the specific task of brain tumor detection.
+The primary goal of this project is to classify MRI images of brains into two categories: those with tumors ('yes') and those without tumors ('no'). This is achieved by leveraging transfer learning with a pre-trained VGG16 model. The base network remains frozen, and only a custom classification head is trained for the specific task of brain tumor detection.
 
 ## Features
 
